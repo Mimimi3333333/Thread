@@ -272,6 +272,14 @@
                 </div>
             </details>
 
+            <div class="content-box">
+            <p style="text-align: center; font-weight: bold; color: #4a5568; margin-bottom: 10px;">⏳萬代還錢</p>
+            <div class="timer-container">
+                <span class="timer-days" id="days-count">0<span class="timer-days-unit">天</span></span>
+                <div class="timer-time" id="time-count">00 ： 00 ： 00</div>
+            </div>
+        </div>
+
             <img class="media-container" style="margin-top: 15px;" src="生日快樂.png" alt="圖片">
         </div>
         <div class="back-btn-group">
@@ -358,7 +366,7 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        const startDate = new Date("2021-01-11T00:00:00").getTime();
+        const startDate = new Date("2019-09-09T00:00:00").getTime();
         function updateTimer() {
             const now = new Date().getTime();
             const diff = now - startDate;
